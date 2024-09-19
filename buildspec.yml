@@ -9,7 +9,7 @@ phases:
   build:
     commands:
       - echo Building the project...
-      - npm run build  # Your build command
+      - NODE_OPTIONS="--max-old-space-size=4096" npm run build  # Increase memory limit # Your build command
 
 artifacts:
   files:
